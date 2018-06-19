@@ -3,33 +3,140 @@ package com.onesidedcab.user.ui
 import android.content.pm.ActivityInfo
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.annotation.IdRes
+import android.support.v4.app.Fragment
+import android.support.v4.widget.DrawerLayout
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import android.text.Editable
-import android.text.TextWatcher
-import android.view.LayoutInflater
+import android.support.v7.widget.Toolbar
 import android.view.View
-import android.view.ViewGroup
-import android.view.WindowManager
-import com.onesidedcab.user.R
 import com.crashlytics.android.Crashlytics
+import com.onesidedcab.user.R
 import com.onesidedcab.user.adapter.CustomAdapter
+import com.onesidedcab.user.fragment.*
+import com.onesidedcab.user.helper.FragmentDrawer
+import com.roughike.bottombar.BottomBar
+import com.roughike.bottombar.OnTabReselectListener
+import com.roughike.bottombar.OnTabSelectListener
 import io.fabric.sdk.android.Fabric
 import java.text.DecimalFormat
 import java.util.*
 
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
+
+
+    override fun onDrawerItemSelected(view: View?, position: Int) {
+        displayView(position)
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+
     lateinit var adapter: CustomAdapter
+    private val TAG = MainActivity::class.java.simpleName
+
+    private var mToolbar: Toolbar? = null
+    private var drawerFragment: FragmentDrawer? = null
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         Fabric.with(this, Crashlytics())
 
+        mToolbar = findViewById(R.id.toolbar) as Toolbar
+        setSupportActionBar(mToolbar)
+        supportActionBar!!.setDisplayShowHomeEnabled(true)
+
+
+        val bottomBar = findViewById(R.id.bottomBar) as BottomBar
+        bottomBar.setOnTabSelectListener(object : OnTabSelectListener {
+            override fun onTabSelected(@IdRes tabId: Int) {
+                if (tabId == R.id.tab_favorites) {
+                    // The tab with id R.id.tab_favorites was selected,
+                    // change your content accordingly.
+                }
+            }
+        })
+
+        bottomBar.setOnTabReselectListener(object : OnTabReselectListener {
+            override fun onTabReSelected(@IdRes tabId: Int) {
+                if (tabId == R.id.tab_favorites) {
+                    // The tab with id R.id.tab_favorites was reselected,
+                    // change your content accordingly.
+                }
+            }
+        })
+
+        drawerFragment = supportFragmentManager.findFragmentById(R.id.fragment_navigation_drawer) as FragmentDrawer
+        drawerFragment!!.setUp(R.id.fragment_navigation_drawer, findViewById(R.id.drawer_layout) as DrawerLayout, mToolbar)
+        drawerFragment!!.setDrawerListener(this@MainActivity)
+
+        // display the first navigation drawer view on app launch
+        displayView(0)
+
+
+
+
 
 
     }
+
+    private fun displayView(position: Int) {
+
+        var fragment: Fragment? = null
+        var title = getString(R.string.app_name)
+        when (position) {
+            0 -> {
+                fragment = BookRideFragment()
+                title = getString(R.string.nav_title_bookacab)
+            }
+            1 -> {
+                fragment = MyRidesFragment()
+                title = getString(R.string.nav_title_myrides)
+            }
+            2 -> {
+                fragment = ReferFragment()
+                title = getString(R.string.nav_title_refer)
+            }
+            3 -> {
+                fragment = WalletFragment()
+                title = getString(R.string.nav_title_wallet)
+            }
+            4 -> {
+                fragment = ProfileFragment()
+                title = getString(R.string.nav_title_profile)
+            }
+            5 -> {
+                fragment = EmergencyFragment()
+                title = getString(R.string.nav_title_emergency_contacts)
+            }
+            6 -> {
+                fragment = HelpFragment()
+                title = getString(R.string.nav_title_help)
+            }
+            else -> {
+            }
+        }
+
+        if (fragment != null) {
+            val fragmentManager = supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.replace(R.id.container_body, fragment)
+            fragmentTransaction.commit()
+
+            // set the toolbar title
+            supportActionBar!!.setTitle(title)
+        }
+    }
+
+
+
+
+
+
 
    /* private fun initView() {
 

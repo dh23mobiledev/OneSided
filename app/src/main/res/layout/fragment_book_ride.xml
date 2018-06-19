@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearCity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:text="@string/onesideFrom"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:padding="2dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Ahemdabad"
+        android:textSize="15sp"
+        android:drawableRight="@drawable/ic_expand_more_black_24dp"
+        android:drawablePadding="10dp"
+        android:padding="2dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/semiLarge"
+            android:text="@string/selectdestination"
+            android:layout_marginTop="@dimen/small"
+            android:textSize="@dimen/textsize_18sp"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:textAllCaps="true" />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/semiSmall"
+        android:layout_marginLeft="@dimen/small"
+        android:layout_marginRight="@dimen/small"
+        android:layout_marginBottom="@dimen/small">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/small"
+            android:elevation="@dimen/small">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:id="@+id/cityPlan"-->
+                <!--app:layoutManager="LinearLayoutManager"-->
+                <!--tools:listitem="@layout/city_plan_item"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/mini">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/semiSmall"
+                            android:text="Vadodara"
+                            android:textSize="@dimen/textsize_20sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/semiSmall"
+                            android:layout_marginLeft="@dimen/semiSmall"
+                            android:layout_marginRight="@dimen/semiSmall"
+                            android:text="From"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/textsize_18sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs 1500"
+                            android:layout_margin="@dimen/semiSmall"
+                            android:textSize="@dimen/textsize_18sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/medium"
+                            android:background="@drawable/square_border_dark"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="@string/bookNow"
+                            android:id="@+id/bookNow"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/mini">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/semiSmall"
+                            android:text="Vadodara"
+                            android:textSize="@dimen/textsize_20sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/semiSmall"
+                            android:layout_marginLeft="@dimen/semiSmall"
+                            android:layout_marginRight="@dimen/semiSmall"
+                            android:text="From"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/textsize_18sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                     />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs 1500"
+                            android:layout_margin="@dimen/semiSmall"
+                            android:textSize="@dimen/textsize_18sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                             />
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/medium"
+                            android:background="@drawable/square_border_dark"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="@string/bookNow"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/mini">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/semiSmall"
+                            android:text="Vadodara"
+                            android:textSize="@dimen/textsize_20sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/semiSmall"
+                            android:layout_marginLeft="@dimen/semiSmall"
+                            android:layout_marginRight="@dimen/semiSmall"
+                            android:text="From"
+                            android:textAllCaps="true"
+                            android:textSize="@dimen/textsize_18sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs 1500"
+                            android:layout_margin="@dimen/semiSmall"
+                            android:textSize="@dimen/textsize_18sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center" />
+
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/medium"
+                            android:background="@drawable/square_border_dark"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="@string/bookNow"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

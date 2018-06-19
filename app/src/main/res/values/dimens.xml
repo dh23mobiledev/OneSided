@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_drawer_width">260dp</dimen>
+
+    <dimen name="micro">0.5dp</dimen>
+    <dimen name="minor">1dp</dimen>
+    <dimen name="mini">2.5dp</dimen>
+    <dimen name="semiSmall">5dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="semiMedium">10dp</dimen>
+    <dimen name="medium">12dp</dimen>
+    <dimen name="semiLarge">15dp</dimen>
+    <dimen name="large">18dp</dimen>
+    <dimen name="extraLarge">30dp</dimen>
+    <dimen name="veryLarge">50dp</dimen>
+    <dimen name="maxLarge">70dp</dimen>
+    <dimen name="textsize_10">10.0sp</dimen>
+
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="feed_item_profile_pic">50dp</dimen>
+    <dimen name="feed_item_profile_name">15dp</dimen>
+    <dimen name="feed_item_timestamp">13dp</dimen>
+    <dimen name="img_width_height">220dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+
+    <dimen name="textsize_28sp">28sp</dimen>
+    <dimen name="textsize_26sp">26sp</dimen>
+    <dimen name="textsize_24sp">24sp</dimen>
+    <dimen name="textsize_22sp">22sp</dimen>
+    <dimen name="textsize_20sp">20sp</dimen>
+    <dimen name="textsize_18sp">18sp</dimen>
+    <dimen name="textsize_16sp">16sp</dimen>
+    <dimen name="textsize_14sp">14sp</dimen>
+    <dimen name="textsize_12sp">12sp</dimen>
+    <dimen name="textsize_15sp">15sp</dimen>
+
+
+
+    <dimen name="action_bar_height">56dp</dimen>
+    <dimen name="text_size">25sp</dimen>
+
+    <dimen name="minorSpace1">0.5dp</dimen>
+    <dimen name="minorSpace2">1dp</dimen>
+    <dimen name="minorSpace3">2.5dp</dimen>
+
+    <dimen name="smallSpace1">5dp</dimen>
+    <dimen name="smallSpace2">8dp</dimen>
+    <dimen name="smallSpace3">10dp</dimen>
+
+    <dimen name="mediumSpace1">12dp</dimen>
+    <dimen name="mediumSpace2">15dp</dimen>
+    <dimen name="mediumSpace3">18dp</dimen>
+
+    <dimen name="largeSpace1">20dp</dimen>
+    <dimen name="largeSpace2">30dp</dimen>
+    <dimen name="largeSpace3">40dp</dimen>
+    <dimen name="largeSpace4">45dp</dimen>
+
+    <dimen name="veryLargeSpace1">50dp</dimen>
+    <dimen name="veryLargeSpace2">80dp</dimen>
+    <dimen name="veryLargeSpace3">100dp</dimen>
+
+    <dimen name="smallText3">12dp</dimen>
+    <dimen name="mediumText1">13.5dp</dimen>
+    <dimen name="mediumText2">15dp</dimen>
+    <dimen name="mediumText3">18dp</dimen>
+    <dimen name="largeText1">20dp</dimen>
+    <dimen name="largeText2">25dp</dimen>
+    <dimen name="largeText3">30dp</dimen>
+    <dimen name="largeText4">40dp</dimen>
+
+    <dimen name="search_icon_padding">12dp</dimen>
+    <dimen name="search_view_text_padding">65dp</dimen>
+
+
+</resources>

@@ -1,32 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <!--<color name="Transparent">#99000000</color>-->
+    <color name="semiTransparent">#20000000</color>
+    <!--<color name="colorDarkerGrey">#384553</color>-->
+    <!--<color name="colorDarkGrey">#FF475869</color>-->
+    <!--<color name="colorGrey">#647B92</color>-->
+    <!--<color name="colorLightGrey">#CFD8DC</color>-->
+    <!--<color name="colorGreen">#1EBF75</color>-->
+    <!--<color name="colorWhite">#FFFFFF</color>-->
+    <!--<color name="keyTextColor">#00699d</color>-->
+    <!--<color name="colorBlack">#000000</color>-->
+    <!--<color name="colorLightGreen">#79BF1E</color>-->
+    <!--<color name="colorRed">#BF3C1E</color>-->
+
+
+    <!--&lt;!&ndash;//  <color name="colorlogoBackground">#C8E6F0</color>&ndash;&gt;-->
+    <!--<color name="colorlogoBackground">#0c99c7</color>-->
+    <!--<color name="background1">#F7F7F7</color>-->
+    <!--<color name="keyboardBackground">#707070</color>-->
+    <!--<color name="bg_theme">#ccedf8</color>-->
+    <!--<color name="textcolor1">#2E85C3</color>-->
+    <!--<color name="textcolor2">#C63C49</color>-->
+    <!--<color name="view">#0F75BC</color>-->
+
+    <!--<color name="transparent">#99000000</color>-->
+
+
+    <color name="colorPrimary">#4d6776</color>
+    <color name="colorPrimaryDark">#3d525e</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="Transparent">#99000000</color>
-    <color name="semiTransparent">#20000000</color>
-    <color name="colorDarkerGrey">#384553</color>
-    <color name="colorDarkGrey">#FF475869</color>
-    <color name="colorGrey">#647B92</color>
-    <color name="colorLightGrey">#CFD8DC</color>
-    <color name="colorGreen">#1EBF75</color>
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="keyTextColor">#00699d</color>
-    <color name="colorBlack">#000000</color>
-    <color name="colorLightGreen">#79BF1E</color>
-    <color name="colorRed">#BF3C1E</color>
+    <color name="linkblue">#3575d3</color>
 
 
-    <!--//  <color name="colorlogoBackground">#C8E6F0</color>-->
-    <color name="colorlogoBackground">#0c99c7</color>
-    <color name="background1">#F7F7F7</color>
-    <color name="keyboardBackground">#707070</color>
-    <color name="bg_theme">#ccedf8</color>
-    <color name="textcolor1">#2E85C3</color>
-    <color name="textcolor2">#C63C49</color>
-    <color name="view">#0F75BC</color>
 
-    <color name="transparent">#99000000</color>
+    <color name="dark1">#4d6776</color>
+    <color name="dark2">#455c6a</color>
+    <color name="dark3">#3d525e</color>
+    <color name="dark4">#354852</color>
+    <color name="dark5">#2e3d46</color>
+    <color name="dark6">#26333b</color>
+    <color name="dark7">#1e292f</color>
+    <color name="dark8">#171e23</color>
+    <color name="dark9">#0f1417</color>
+    <color name="dark10">#070a0b</color>
+    <color name="black">#000000</color>
+
+
+    <color name="light1">#4d6776</color>
+    <color name="light2">#5e7683</color>
+    <color name="light3">#708591</color>
+    <color name="light4">#82949f</color>
+    <color name="light5">#94a3ac</color>
+    <color name="light6">#a6b3ba</color>
+    <color name="light7">#b7c2c8</color>
+    <color name="light8">#c9d1d5</color>
+    <color name="light9">#dbe0e3</color>
+    <color name="light10">#edeff1</color>
+    <color name="white">#ffffff</color>
+
 
 </resources>

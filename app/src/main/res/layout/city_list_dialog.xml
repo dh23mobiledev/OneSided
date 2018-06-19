@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearDialogue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light1"
+            android:padding="@dimen/medium">
+
+            <ImageView
+                android:id="@+id/ChativDriverClose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:src="@android:drawable/ic_delete"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/ChattvDriverTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/selectcity"
+                android:textColor="@color/white"
+                android:fontFamily="@font/regular"
+                android:textSize="@dimen/textsize_24sp" />
+
+        </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@drawable/square_border"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_view"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="Search City"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_close_black_24dp" />
+    </LinearLayout>
+
+
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutCell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/minor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/small">
+
+        <TextView
+            android:id="@+id/tvSample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small"
+            android:text="Ahembdabad"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textsize_16sp" />
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/small"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layoutCell2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/minor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/small">
+
+        <TextView
+            android:id="@+id/tvSample2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small"
+            android:text="Anand"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textsize_16sp" />
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/small"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutCell3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/minor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/small">
+
+        <TextView
+            android:id="@+id/tvSample3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/small"
+            android:text="Surat"
+            android:fontFamily="@font/regular"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textsize_16sp" />
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/small"
+            android:backgroundTint="@color/colorPrimary"
+            />
+
+    </RelativeLayout>
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/CityList"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--app:layoutManager="LinearLayoutManager"-->
+            <!--tools:listitem="@layout/city_item" />-->
+
+
+        <ProgressBar
+            android:id="@+id/Chatprogress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+
+
+    </LinearLayout>
+
+
