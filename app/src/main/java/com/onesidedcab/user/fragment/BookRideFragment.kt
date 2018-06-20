@@ -19,10 +19,9 @@ import com.onesidedcab.user.ui.MainActivity
 import com.onesidedcab.user.ui.RideDetailsActivity
 import android.support.design.widget.BottomSheetBehavior
 import android.support.annotation.NonNull
-
-
-
-
+import android.support.design.widget.BottomSheetDialog
+import kotlinx.android.synthetic.main.activity_otp.*
+import kotlinx.android.synthetic.main.car_selection_dialouge.view.*
 
 
 class BookRideFragment : Fragment(),View.OnClickListener {
@@ -49,10 +48,10 @@ class BookRideFragment : Fragment(),View.OnClickListener {
     fun initViews(view: View) {
 
         linearCity = view.findViewById(R.id.linearCity)
-        layoutBottomSheet = view.findViewById(R.id.layoutBottomSheet)
+    //    layoutBottomSheet = view.findViewById(R.id.layoutBottomSheet)
         bookNow = view.findViewById(R.id.bookNow)
 
-        sheetBehavior = BottomSheetBehavior.from(layoutBottomSheet);
+    //    sheetBehavior = BottomSheetBehavior.from(layoutBottomSheet);
 
         linearCity.setOnClickListener(this)
         bookNow.setOnClickListener(this)
@@ -188,7 +187,15 @@ class BookRideFragment : Fragment(),View.OnClickListener {
     private fun selectCarType(){
 
 
+        val view = layoutInflater.inflate(R.layout.car_selection_dialouge, null)
 
+        val dialog = BottomSheetDialog(this!!.activity!!)
+        dialog.setContentView(view)
+        dialog.show()
+
+        view.imgClose.setOnClickListener(View.OnClickListener { dialog.dismiss() })
+
+        view.txtHatchback.setOnClickListener(View.OnClickListener { startActivity(Intent(this!!.activity!!, RideDetailsActivity::class.java)) ; dialog.dismiss() })
         //startActivity(Intent(activity, RideDetailsActivity::class.java))
     }
 
