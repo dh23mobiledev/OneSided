@@ -26,10 +26,7 @@ import java.util.*
 class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
 
 
-    override fun onDrawerItemSelected(view: View?, position: Int) {
-        displayView(position)
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+
 
 
     lateinit var adapter: CustomAdapter
@@ -37,22 +34,24 @@ class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
 
     private var mToolbar: Toolbar? = null
     private var drawerFragment: FragmentDrawer? = null
-
+     var bottomBar:BottomBar? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Fabric.with(this, Crashlytics())
-
-        mToolbar = findViewById(R.id.toolbar) as Toolbar
-        setSupportActionBar(mToolbar)
-        supportActionBar!!.setDisplayShowHomeEnabled(true)
+        initViews()
+        clickListener()
 
 
-        val bottomBar = findViewById(R.id.bottomBar) as BottomBar
-        bottomBar.setOnTabSelectListener(object : OnTabSelectListener {
+
+
+    }
+
+    private fun clickListener() {
+
+        bottomBar!!.setOnTabSelectListener(object : OnTabSelectListener {
             override fun onTabSelected(@IdRes tabId: Int) {
                 if (tabId == R.id.tab_favorites) {
                     // The tab with id R.id.tab_favorites was selected,
@@ -61,7 +60,7 @@ class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
             }
         })
 
-        bottomBar.setOnTabReselectListener(object : OnTabReselectListener {
+        bottomBar!!.setOnTabReselectListener(object : OnTabReselectListener {
             override fun onTabReSelected(@IdRes tabId: Int) {
                 if (tabId == R.id.tab_favorites) {
                     // The tab with id R.id.tab_favorites was reselected,
@@ -69,6 +68,21 @@ class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
                 }
             }
         })
+//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    private fun initViews() {
+
+        Fabric.with(this, Crashlytics())
+        mToolbar = findViewById(R.id.toolbar) as Toolbar
+        setSupportActionBar(mToolbar)
+        supportActionBar!!.setDisplayShowHomeEnabled(true)
+        bottomBar = findViewById(R.id.bottomBar) as BottomBar
+
+
+//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+
 
         drawerFragment = supportFragmentManager.findFragmentById(R.id.fragment_navigation_drawer) as FragmentDrawer
         drawerFragment!!.setUp(R.id.fragment_navigation_drawer, findViewById(R.id.drawer_layout) as DrawerLayout, mToolbar)
@@ -78,9 +92,12 @@ class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
         displayView(0)
 
 
+    }
 
 
 
+    override fun onDrawerItemSelected(view: View?, position: Int) {
+        displayView(position)
 
     }
 

@@ -63,5 +63,7 @@
     <string name="note">Note</string>
     <string name="notedetails">- Driver Allowance: Rs 0 \n - Extra KMs Fare: Rs 0 \n - One Sided Toll-Tax : Included \n - Inter-State Border Tax :Included \n - Parking Charges :As applicable Extra </string>
     <string name="choosepayment">Choose Payment Options</string>
+    <string name="ongoingtrips">Ongoing Trips</string>
+    <string name="pasttrips">Past Trip</string>
 
 </resources>

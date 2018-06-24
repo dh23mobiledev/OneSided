@@ -48,10 +48,17 @@ class BookRideFragment : Fragment(),View.OnClickListener {
     fun initViews(view: View) {
 
         linearCity = view.findViewById(R.id.linearCity)
+<<<<<<< HEAD
     //    layoutBottomSheet = view.findViewById(R.id.layoutBottomSheet)
         bookNow = view.findViewById(R.id.bookNow)
 
     //    sheetBehavior = BottomSheetBehavior.from(layoutBottomSheet);
+=======
+      //  layoutBottomSheet = view.findViewById(R.id.layoutBottomSheet)
+        bookNow = view.findViewById(R.id.bookNow)
+
+//        sheetBehavior = BottomSheetBehavior.from(layoutBottomSheet);
+>>>>>>> Changs in navigation drawer and fragment - Dhan
 
         linearCity.setOnClickListener(this)
         bookNow.setOnClickListener(this)
@@ -195,8 +202,12 @@ class BookRideFragment : Fragment(),View.OnClickListener {
 
         view.imgClose.setOnClickListener(View.OnClickListener { dialog.dismiss() })
 
+<<<<<<< HEAD
         view.txtHatchback.setOnClickListener(View.OnClickListener { startActivity(Intent(this!!.activity!!, RideDetailsActivity::class.java)) ; dialog.dismiss() })
         //startActivity(Intent(activity, RideDetailsActivity::class.java))
+=======
+        startActivity(Intent(activity, RideDetailsActivity::class.java))
+>>>>>>> Changs in navigation drawer and fragment - Dhan
     }
 
 }
