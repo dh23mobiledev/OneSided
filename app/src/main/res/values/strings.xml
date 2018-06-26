@@ -66,4 +66,18 @@
     <string name="ongoingtrips">Ongoing Trips</string>
     <string name="pasttrips">Past Trip</string>
 
+
+    <string name="card">Credit / Debit Card</string>
+    <string name="netbanking">Net Banking</string>
+    <string name="payment">Payment Gateway</string>
+    <string name="paytm">Paytm Wallet</string>
+    <string name="paypal">Pay Pal</string>
+    <string name="paydriver">Pay Cash To Driver</string>
+    <string name="selectpayment">Select Payment</string>
+    <string name="totalAmount">Total Amount</string>
+    <string name="Amount">Rs. 1,364</string>
+    <string name="AmountPayble">Amount Payable : Rs. 1,364</string>
+    <string name="paymentmethod">Select Payment Mode</string>
+    <string name="tolltax">Rs 1,1199 + Toll Tax : Rs. 100 + GST (5.0 %)\n : Rs.65</string>
+
 </resources>
