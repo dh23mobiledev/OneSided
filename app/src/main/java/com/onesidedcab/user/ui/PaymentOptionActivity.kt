@@ -6,20 +6,18 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import com.onesidedcab.user.R
-import kotlinx.android.synthetic.main.activity_otp.*
 
-class RideDetailsActivity : AppCompatActivity() {
+class PaymentOptionActivity : AppCompatActivity() {
 
     lateinit var imgBak:ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ride_details)
+        setContentView(R.layout.activity_payment_option)
 
         initViews()
         clicklistener()
     }
-
 
     private fun initViews() {
 
@@ -32,9 +30,8 @@ class RideDetailsActivity : AppCompatActivity() {
 
     private fun clicklistener() {
 
-        imgBak.setOnClickListener(View.OnClickListener { startActivity(Intent(this@RideDetailsActivity, MainActivity::class.java)) })
+        imgBak.setOnClickListener(View.OnClickListener { startActivity(Intent(this@PaymentOptionActivity, MainActivity::class.java)) })
 
 
     }
-
 }

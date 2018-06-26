@@ -26,9 +26,6 @@ import java.util.*
 class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
 
 
-
-
-
     lateinit var adapter: CustomAdapter
     private val TAG = MainActivity::class.java.simpleName
 

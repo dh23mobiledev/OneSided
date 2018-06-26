@@ -33,7 +33,8 @@
         <activity
             android:name=".ui.OtpActivity"
             android:theme="@style/fullscreen" />
-        <activity android:name=".ui.RideDetailsActivity"></activity>
+        <activity android:name=".ui.RideDetailsActivity" />
+        <activity android:name=".ui.PaymentOptionActivity"></activity>
     </application>
 
 </manifest>
