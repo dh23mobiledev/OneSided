@@ -33,7 +33,6 @@ class BookRideFragment : Fragment(),View.OnClickListener {
     lateinit var layoutBottomSheet:LinearLayout
     lateinit var bookNow:Button
 
-    var sheetBehavior: BottomSheetBehavior<*>? = null
     // TODO: Rename and change types of parameters
 
 
@@ -64,29 +63,7 @@ class BookRideFragment : Fragment(),View.OnClickListener {
         bookNow.setOnClickListener(this)
 
 
-//
-//        sheetBehavior!!.setBottomSheetCallback(object : BottomSheetBehavior.BottomSheetCallback() {
-//            override fun onStateChanged(bottomSheet: View, newState: Int) {
-//                when (newState) {
-//                    BottomSheetBehavior.STATE_HIDDEN -> {
-//                    }
-//                    BottomSheetBehavior.STATE_EXPANDED -> {
-//                        btnBottomSheet.setText("Close Sheet")
-//                    }
-//                    BottomSheetBehavior.STATE_COLLAPSED -> {
-//                        btnBottomSheet.setText("Expand Sheet")
-//                    }
-//                    BottomSheetBehavior.STATE_DRAGGING -> {
-//                    }
-//                    BottomSheetBehavior.STATE_SETTLING -> {
-//                    }
-//                }
-//            }
-//
-//            override fun onSlide(bottomSheet: View, slideOffset: Float) {
-//
-//            }
-//        })
+
 
 
 
@@ -208,6 +185,12 @@ class BookRideFragment : Fragment(),View.OnClickListener {
 //=======
 //        startActivity(Intent(activity, RideDetailsActivity::class.java))
 //>>>>>>> Changs in navigation drawer and fragment - Dhan
+    }
+
+    companion object {
+        fun newInstance(): BookRideFragment {
+            return BookRideFragment()
+        }
     }
 
 }

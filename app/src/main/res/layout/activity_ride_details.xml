@@ -48,7 +48,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/small"
                 android:layout_marginRight="@dimen/small"
-                android:fontFamily="@font/regular"
                 android:text="Rs. 1500"
                 android:textAlignment="center"
                 android:textSize="@dimen/textsize_26sp" />

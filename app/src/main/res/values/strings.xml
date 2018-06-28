@@ -7,6 +7,7 @@
     <string name="usermobileno">Mobile No</string>
     <string name="useremail">Email (Optional)</string>
     <string name="getotp">Get OTP</string>
+    <string name="save">Save</string>
     <string name="terms">By continuing. I agree to Onesidedcabs</string>
     <string name="termscondition">Terms and Conditions</string>
     <string name="countrycode">+ 91</string>
@@ -32,17 +33,20 @@
         <item>@string/nav_title_refer</item>
         <item>@string/nav_title_wallet</item>
         <item>@string/nav_title_profile</item>
-        <item>@string/nav_title_emergency_contacts</item>
         <item>@string/nav_title_help</item>
+        <item>@string/nav_title_logout</item>
     </string-array>
 
     <string name="nav_title_bookacab">Book A Cab</string>
+    <string name="nav_title_hourly">Hourly Cab</string>
+    <string name="nav_title_outstation">Outstation (Return)</string>
     <string name="nav_title_myrides">My Rides</string>
     <string name="nav_title_refer">Refer &amp; Earn</string>
     <string name="nav_title_wallet">Wallet</string>
     <string name="nav_title_profile">Profile</string>
+    <string name="nav_title_logout">Logout</string>
     <string name="nav_title_emergency_contacts">Emergency Contacts</string>
-    <string name="nav_title_help">Help</string>
+    <string name="nav_title_help">Support</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -80,4 +84,9 @@
     <string name="paymentmethod">Select Payment Mode</string>
     <string name="tolltax">Rs 1,1199 + Toll Tax : Rs. 100 + GST (5.0 %)\n : Rs.65</string>
 
+    <string name="Travelcity">Travel City</string>
+    <string name="noofdays">Number Of Days</string>
+    <string name="getfare">Get Fare</string>
+    <string name="refer">Refer</string>
+    <string name="referstring">Gift your friends Rs. 100 when they Sign Up and you also get Rs 200 when they take their first ride with us. forany concern \n feedback@onesidedcab.com</string>
 </resources>

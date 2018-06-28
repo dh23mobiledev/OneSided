@@ -2,14 +2,14 @@
 <tabs>
     <tab
         id="@+id/tab_favorites"
-        icon="@mipmap/ic_launcher"
+        icon="@drawable/cancel"
         title="Favorites" />
     <tab
         id="@+id/tab_nearby"
-        icon="@mipmap/ic_launcher"
+        icon="@drawable/cancel"
         title="Nearby" />
     <tab
         id="@+id/tab_friends"
-        icon="@mipmap/ic_launcher"
+        icon="@drawable/cancel"
         title="Friends" />
 </tabs>

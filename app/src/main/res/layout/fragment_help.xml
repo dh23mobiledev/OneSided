@@ -1,14 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".fragment.HelpFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hi User"
+            android:paddingTop="@dimen/small"
+            android:paddingLeft="@dimen/semiLarge"
+            android:textSize="@dimen/textsize_26sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How can We Help You ?"
+            android:paddingLeft="@dimen/semiLarge"
+            android:paddingBottom="@dimen/semiLarge"
+            android:textSize="@dimen/textsize_22sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:padding="@dimen/large"
+            android:textSize="@dimen/textsize_22sp"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAQ/Help"
+            android:padding="@dimen/large"
+            android:textSize="@dimen/textsize_22sp"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Us"
+            android:padding="@dimen/large"
+            android:textSize="@dimen/textsize_22sp"
+            android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

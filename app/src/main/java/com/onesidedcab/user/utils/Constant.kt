@@ -32,6 +32,7 @@ object Constant {
             val GALLERY_VIDEO_PERMISSION = 4
             val CAPTURE_VIDEO_PERMISSION = 5
             val PAYPAL_PERMISSION = 6
+            const val WIFI_ENABLE_REQUEST = 7
         }
     }
 

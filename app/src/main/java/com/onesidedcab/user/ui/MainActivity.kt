@@ -1,9 +1,10 @@
 package com.onesidedcab.user.ui
 
-import android.content.pm.ActivityInfo
+
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.annotation.IdRes
+import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v4.widget.DrawerLayout
 import android.support.v7.widget.LinearLayoutManager
@@ -15,12 +16,8 @@ import com.onesidedcab.user.R
 import com.onesidedcab.user.adapter.CustomAdapter
 import com.onesidedcab.user.fragment.*
 import com.onesidedcab.user.helper.FragmentDrawer
-import com.roughike.bottombar.BottomBar
-import com.roughike.bottombar.OnTabReselectListener
-import com.roughike.bottombar.OnTabSelectListener
 import io.fabric.sdk.android.Fabric
-import java.text.DecimalFormat
-import java.util.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
@@ -31,7 +28,9 @@ class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
 
     private var mToolbar: Toolbar? = null
     private var drawerFragment: FragmentDrawer? = null
-     var bottomBar:BottomBar? = null
+
+
+    lateinit var fragment : Fragment
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,25 +47,37 @@ class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
 
     private fun clickListener() {
 
-        bottomBar!!.setOnTabSelectListener(object : OnTabSelectListener {
-            override fun onTabSelected(@IdRes tabId: Int) {
-                if (tabId == R.id.tab_favorites) {
-                    // The tab with id R.id.tab_favorites was selected,
-                    // change your content accordingly.
-                }
-            }
-        })
 
-        bottomBar!!.setOnTabReselectListener(object : OnTabReselectListener {
-            override fun onTabReSelected(@IdRes tabId: Int) {
-                if (tabId == R.id.tab_favorites) {
-                    // The tab with id R.id.tab_favorites was reselected,
-                    // change your content accordingly.
-                }
-            }
-        })
-//        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
+
+
+
+
+    fun replaceFragment(id: Int) {
+
+        when (id) {
+            R.id.nav_oneway -> {
+                fragment = BookRideFragment.newInstance()
+                supportActionBar!!.setTitle(getString(R.string.nav_title_bookacab))
+                //tvTitle.setText("Dashboard")
+            }
+            R.id.nav_hourly ->{fragment = BookRideFragment.newInstance()
+                supportActionBar!!.setTitle(getString(R.string.nav_title_hourly))
+                //tvTitle.setText("Notifications")
+            }
+            R.id.nav_outstation -> {fragment = OutStationFragment.newInstance()
+                supportActionBar!!.setTitle(getString(R.string.nav_title_outstation))
+                //tvTitle.setText("Message")
+            }
+        }
+
+        supportFragmentManager
+                .beginTransaction()
+                .replace(R.id.container_body, fragment, "")
+                .commit()
+    }
+
+
 
     private fun initViews() {
 
@@ -74,7 +85,6 @@ class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
         mToolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(mToolbar)
         supportActionBar!!.setDisplayShowHomeEnabled(true)
-        bottomBar = findViewById(R.id.bottomBar) as BottomBar
 
 
 //        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
@@ -87,6 +97,38 @@ class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
 
         // display the first navigation drawer view on app launch
         displayView(0)
+
+        supportFragmentManager
+                .beginTransaction()
+                .add(R.id.container_body,BookRideFragment.newInstance(), "")
+                .commit()
+
+
+        val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_oneway -> {
+                    replaceFragment(R.id.nav_oneway)
+                    return@OnNavigationItemSelectedListener true
+                }
+
+                R.id.nav_hourly -> {
+                    replaceFragment(R.id.nav_hourly)
+                    return@OnNavigationItemSelectedListener true
+                }
+                R.id.nav_outstation -> {
+                    replaceFragment(R.id.nav_outstation)
+                    return@OnNavigationItemSelectedListener true
+                }
+
+
+            }
+            false
+        }
+
+
+        navigation.selectedItemId = R.id.nav_oneway
+
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
 
 
     }
@@ -124,10 +166,6 @@ class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
                 title = getString(R.string.nav_title_profile)
             }
             5 -> {
-                fragment = EmergencyFragment()
-                title = getString(R.string.nav_title_emergency_contacts)
-            }
-            6 -> {
                 fragment = HelpFragment()
                 title = getString(R.string.nav_title_help)
             }
