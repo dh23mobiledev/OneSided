@@ -14,7 +14,7 @@ import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.app.FragmentManager;
 
 
-class MyRidesFragment : Fragment() {
+class MyRidesFragment11 : Fragment() {
 
     private var toolbar: Toolbar? = null
     private var tabLayout: TabLayout? = null
