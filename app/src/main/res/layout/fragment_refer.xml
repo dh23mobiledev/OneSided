@@ -15,10 +15,11 @@
 
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_margin="@dimen/large"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@drawable/carfront" />
 
 
         <TextView

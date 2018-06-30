@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/nav_oneway"
-        android:icon="@drawable/person"
+        android:icon="@drawable/ride"
         android:title="One Way" />
 
     <item
         android:id="@+id/nav_hourly"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/destination"
         android:title="Hourly Cab" />
 
     <item
         android:id="@+id/nav_outstation"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/outstation"
         android:title="Outstation" />
 
 

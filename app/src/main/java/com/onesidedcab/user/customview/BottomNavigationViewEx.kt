@@ -25,7 +25,7 @@ import java.lang.ref.WeakReference
 /**
  * Created by ADMIN on 12/20/2017.
  */
-internal class BottomNavigationViewEx : BottomNavigationView {
+class BottomNavigationViewEx : BottomNavigationView {
     // used for animation
     private var mShiftAmount: Int = 0
     private var mScaleUpFactor: Float = 0.toFloat()

@@ -148,26 +148,32 @@ class MainActivity : AppCompatActivity(),FragmentDrawer.FragmentDrawerListener {
             0 -> {
                 fragment = BookRideFragment()
                 title = getString(R.string.nav_title_bookacab)
+                navigation.visibility = View.VISIBLE
             }
             1 -> {
                 fragment = MyRidesFragment()
                 title = getString(R.string.nav_title_myrides)
+                navigation.visibility = View.VISIBLE
             }
             2 -> {
                 fragment = ReferFragment()
                 title = getString(R.string.nav_title_refer)
+                navigation.visibility = View.GONE
             }
             3 -> {
                 fragment = WalletFragment()
                 title = getString(R.string.nav_title_wallet)
+                navigation.visibility = View.GONE
             }
             4 -> {
                 fragment = ProfileFragment()
                 title = getString(R.string.nav_title_profile)
+                navigation.visibility = View.GONE
             }
             5 -> {
                 fragment = HelpFragment()
                 title = getString(R.string.nav_title_help)
+                navigation.visibility = View.GONE
             }
             else -> {
             }
