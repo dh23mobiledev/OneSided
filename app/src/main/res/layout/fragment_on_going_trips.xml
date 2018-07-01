@@ -29,6 +29,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:layout_marginLeft="@dimen/semiSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="08 Jan 2018 at 12:10 PM"
@@ -36,6 +37,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:layout_marginRight="@dimen/semiSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
@@ -43,6 +45,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_gravity="center"
                     android:gravity="end"
+                    android:textColor="@color/white"
                     android:background="@drawable/price_rect"
                     android:text="Rs. 100"
                     android:paddingLeft="@dimen/semiMedium"
@@ -54,6 +57,7 @@
             </RelativeLayout>
 
             <LinearLayout
+                android:layout_marginLeft="@dimen/semiSmall"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"

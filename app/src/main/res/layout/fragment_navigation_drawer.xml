@@ -9,7 +9,7 @@
     <RelativeLayout
         android:id="@+id/nav_header_container"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="160dp"
         android:layout_alignParentTop="true"
         android:background="@color/colorPrimary">
 
@@ -34,16 +34,6 @@
             android:textSize="@dimen/textsize_16sp"
             />
 
-        <TextView
-            android:id="@+id/edtEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="user@gmail.com"
-            android:textAlignment="center"
-            android:layout_below="@+id/edtUser"
-            android:textColor="@color/white"
-            android:textSize="@dimen/textsize_16sp"
-            />
 
 
     </RelativeLayout>
@@ -54,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/nav_header_container"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="5dp" />
 
 
 </RelativeLayout>
