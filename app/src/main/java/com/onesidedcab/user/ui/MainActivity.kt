@@ -125,13 +125,12 @@ class MainActivity : AppCompatActivity(), FragmentDrawer.FragmentDrawerListener 
                 navigation.visibility = View.GONE
             }
             5 -> {
-                //fragment = EmergencyFragment()
-                title = getString(R.string.nav_title_emergency_contacts)
-                navigation.visibility = View.GONE
-            }
-            6 -> {
                 fragment = HelpFragment()
                 title = getString(R.string.nav_title_help)
+
+            }
+            6 -> {
+                
             }
             else -> {
             }
