@@ -12,7 +12,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/light1"
+            android:background="@color/colorPrimary"
             android:padding="@dimen/medium">
 
             <ImageView
@@ -57,8 +57,8 @@
             android:maxLines="1"
             android:paddingLeft="5dp"
             android:singleLine="true"
-            android:textColor="@color/colorPrimary"
-            android:textColorHint="@color/colorPrimary" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <ImageView
             android:id="@+id/search_clear"
@@ -90,7 +90,7 @@
             android:padding="@dimen/small"
             android:text="Ahembdabad"
             android:fontFamily="@font/regular"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/black"
             android:textSize="@dimen/textsize_16sp" />
 
 
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:padding="@dimen/small"
-            android:backgroundTint="@color/colorPrimary"
+            android:backgroundTint="@color/black"
             />
 
     </RelativeLayout>
@@ -121,7 +121,7 @@
             android:padding="@dimen/small"
             android:text="Anand"
             android:fontFamily="@font/regular"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/black"
             android:textSize="@dimen/textsize_16sp" />
 
 
@@ -131,7 +131,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:padding="@dimen/small"
-            android:backgroundTint="@color/colorPrimary"
+            android:backgroundTint="@color/black"
             />
 
     </RelativeLayout>
@@ -152,7 +152,7 @@
             android:padding="@dimen/small"
             android:text="Surat"
             android:fontFamily="@font/regular"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/black"
             android:textSize="@dimen/textsize_16sp" />
 
 
@@ -162,7 +162,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:padding="@dimen/small"
-            android:backgroundTint="@color/colorPrimary"
+            android:backgroundTint="@color/black"
             />
 
     </RelativeLayout>

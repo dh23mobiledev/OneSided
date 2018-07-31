@@ -11,7 +11,16 @@ public class BaseData implements Serializable{
         this.success = success;
     }
 
+    public String getStatus_code() {
+        return status_code;
+    }
+
+    public void setStatus_code(String status_code) {
+        this.status_code = status_code;
+    }
+
     private boolean success;
+    private String status_code;
     private String message;
     private Object data;
 

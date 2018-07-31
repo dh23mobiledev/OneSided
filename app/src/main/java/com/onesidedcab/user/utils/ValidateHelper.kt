@@ -24,11 +24,11 @@ object ValidateHelper {
     }
 
 
-    fun validateEditTexttoShort(editText: EditText?): Boolean {
+    fun validateEditTextMobile(editText: EditText?): Boolean {
 
         if (editText == null) return false
         if (editText.text.toString().trim { it <= ' ' }.length == 0) return false
-        if (editText.text.toString().trim { it <= ' ' }.length < 5) return false
+        if (editText.text.toString().trim { it <= ' ' }.length < 10) return false
 
         return true
     }

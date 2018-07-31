@@ -30,9 +30,9 @@
     <!--<color name="transparent">#99000000</color>-->
 
 
-    <color name="colorPrimary">#4d6776</color>
-    <color name="colorPrimaryDark">#3d525e</color>
-    <color name="colorAccent">#3d525e</color>
+    <color name="colorPrimary">#b5d034</color>
+    <color name="colorPrimaryDark">#b5d034</color>
+    <color name="colorAccent">#b5d034</color>
 
     <color name="linkblue">#3575d3</color>
 

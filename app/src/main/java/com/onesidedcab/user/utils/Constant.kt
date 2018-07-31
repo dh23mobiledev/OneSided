@@ -23,6 +23,8 @@ object Constant {
 
     var APP_PHASE = 0
 
+
+
     interface REQUESTS {
         companion object {
             val USER_PERMISSION = 0
@@ -58,45 +60,12 @@ object Constant {
 
     interface BASE_URL {
         companion object {
-/*
-            val LOCAL = "http://ogiapi.inngeniusonline.com/api/"
-            val DEVELOPMENT = "http://ogiapi.inngeniusonline.com/api/"
-            val LIVE = "http://ogiapi.inngeniusonline.com/api/"
-            val IMAGE_URL = "http://ogiapi.inngeniusonline.com/"*/
-
-            /* val LOCAL = "http://inngeniusapi.cableplus.in/api/"
-              val DEVELOPMENT = "http://inngeniusapi.cableplus.in/api/"
-              val LIVE = "http://inngeniusapi.cableplus.in/api/"
-              val IMAGE_URL = "http://inngeniusapi.cableplus.in/"*/
-
-            /* val LOCAL = "http://api.inngenius.net/api/"
-              val DEVELOPMENT = "http://api.inngenius.net/api/"
-              val LIVE = "http://api.inngenius.net/api/"
-
-  */
 
 
-            val LOCAL = "https://newapi.inngenius.com/api/"
-            val DEVELOPMENT = "https://newapi.inngenius.com/api/"
-            val LIVE = "https://newapi.inngenius.com/api/"
 
-
-            /*val IMAGE_URL = "http://inngeniusapi.cableplus.in/"*/
-
-
-            /*  val LOCAL = "http://cstoreapi.inngeniusonline.com/api/"
-                val DEVELOPMENT = "http://cstoreapi.inngeniusonline.com/api/"
-                val LIVE = "http://cstoreapi.inngeniusonline.com/api/"
-                val IMAGE_URL = "http://cstoreapi.inngeniusonline.com/"*/
-
-
-            //http://sleepinngsoapi.inngeniusonline.com/api/User/LoginEmployee
-
-            /*  val LOCAL = "http://sleepinngsoapi.inngeniusonline.com/api/"
-               val DEVELOPMENT = "http://sleepinngsoapi.inngeniusonline.com/api/"
-               val LIVE = "http://sleepinngsoapi.inngeniusonline.com/api/"
-               val IMAGE_URL = "http://sleepinngsoapi.inngeniusonline.com/"*/
-
+            val LOCAL = "http://demo.onesidedcab.com/api/"
+            val DEVELOPMENT = "http://demo.onesidedcab.com/api/"
+            val LIVE = "http://demo.onesidedcab.com/api/"
 
         }
     }
@@ -105,16 +74,7 @@ object Constant {
     interface API_USER_URL {
         companion object {
 
-            const val Base_url = "PropertyMaster/GetPropertyMasterUrlInfo"
-            const val SIGN_IN = "user/loginEmployee"
-            const val EMPLOYEE = "Timesheet/EmployeeTimeCurrentStatus"
-            const val CLOCKIN = "Timesheet/SaveClockTime"
-            const val EMPLOYEE_TASK = "Timesheet/GetEmployeeTimeSheetfromEmployeeID"
-            const val UNDO_TASK = "Timesheet/UndoEmployeTimeSheetfromEmployeeID"
-            const val GET_SCHEDULAR = "Housekeeping/GetHKWeekScheduleEmployee_AdminApp"
-            const val PROFILE_UPDATE = "Timesheet/UpdateProfileImage"
-            const val LAST_TIMERECORD = "Timesheet/GetEmployeeTimeSheetLastRecordForAdminApp"
-            /*  const val test_url = "Task/GetUserList"*/
+            const val GenerateOTP = "GenerateOTP"
 
 
         }
@@ -159,7 +119,7 @@ object Constant {
     val RESULT_CAMERA = 2
     val RESULT_GALLERY = 1
 
-    val TAG = "SmartLimoPassenger"
+    val TAG = "OneSided"
     // "http://18.220.127.24/smart_limo/api/passenger/";
 
 

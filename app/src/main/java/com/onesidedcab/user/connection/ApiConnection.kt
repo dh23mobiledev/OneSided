@@ -1,6 +1,7 @@
 package com.inngeniustimeclock.Connection
 
 import android.content.Context
+import android.provider.SyncStateContract
 import android.support.v4.widget.SwipeRefreshLayout
 import android.util.Log
 import android.widget.Toast
@@ -8,6 +9,7 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import com.onesidedcab.user.model.BaseData
+import com.onesidedcab.user.utils.Constant
 import com.onesidedcab.user.utils.MapDeserializerDoubleAsIntFix
 import com.onesidedcab.user.utils.Utils
 import okhttp3.*
@@ -132,7 +134,7 @@ object ApiConnection {
         })
     }
 
-    fun getClient(url:String): Retrofit? {
+    fun getClient(): Retrofit? {
       //  if (retrofit == null) {
 
             val gson = GsonBuilder()
@@ -140,7 +142,7 @@ object ApiConnection {
                     .create()
 
             retrofit = Retrofit.Builder()
-                    .baseUrl(url)
+                    .baseUrl(Constant.getBaseUrl())
                     .addConverterFactory(GsonConverterFactory.create(gson))
                     .build()
         //}

@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -81,6 +82,7 @@
 
 
                 <EditText
+                    android:id="@+id/edUserName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/imgView_userIcon"
@@ -117,6 +119,7 @@
 
 
                 <EditText
+                    android:id="@+id/edUserMobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/imgView_userIcon2"
@@ -153,6 +156,7 @@
 
 
                 <EditText
+                    android:id="@+id/edUserEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignBottom="@+id/imgView_userIcon3"
@@ -169,7 +173,7 @@
             </RelativeLayout>
 
             <Button
-                android:id="@+id/btnGetOtp"
+                android:id="@+id/btnGenOtp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"

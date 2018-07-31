@@ -130,7 +130,7 @@ class MainActivity : AppCompatActivity(), FragmentDrawer.FragmentDrawerListener 
 
             }
             6 -> {
-                
+
             }
             else -> {
             }

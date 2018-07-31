@@ -90,4 +90,25 @@
     <string name="getfare">Get Fare</string>
     <string name="refer">Refer</string>
     <string name="referstring">Gift your friends Rs. 100 when they Sign Up and you also get Rs 200 when they take their first ride with us. forany concern \n feedback@onesidedcab.com</string>
+
+
+
+
+
+
+
+
+
+
+    <string name="internet_not_avail">Internet is not available. Please try later.</string>
+
+    <string name="failureConnect">Failed to connect</string>
+    <string name="errorCheckNet">Check your internet connectivity</string>
+    <string name="errorSomething">Something went wrong, Please try again.</string>
+    <string name="failureSignUp">Connection Timeout Please Try again.</string>
+    <string name="failureSignIn">Connection Timeout Please Try again.</string>
+    <string name="lbl_uname_not_null">Username must enter.</string>
+    <string name="lbl_pwd_not_null">Mobile number must enter.</string>
+
+
 </resources>
