@@ -6,216 +6,317 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/splashimage"
     tools:context=".ui.LoginActivity">
 
 
 
     <LinearLayout
+        android:id="@+id/linearform"
+        android:orientation="vertical"
         android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_marginLeft="@dimen/medium"
+        android:layout_marginRight="@dimen/medium">
 
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:id="@+id/input_uname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Username" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Password" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:theme="@style/TextLabel">
+
+            <EditText
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/white"
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Email (Optional)" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/btnGenOtp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtTerms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:text="@string/terms"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
 
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="20dp"
-            android:src="@drawable/carfront" />
+    <TextView
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:text="@string/login_details"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical">
-
-
-            <RelativeLayout
-                android:id="@+id/relativeLayout1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView1"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="30dp">
-
-                <ImageView
-                    android:id="@+id/imgView_userIcon"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@color/colorPrimary"
-                    android:padding="8dp"
-                    android:src="@drawable/person"
-                    android:tint="@color/white" />
-
-
-                <EditText
-                    android:id="@+id/edUserName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/imgView_userIcon"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/imgView_userIcon"
-                    android:background="@drawable/square_border"
-                    android:hint="@string/username"
-                    android:padding="7dp"
-                    android:paddingLeft="20dp"
-                    android:textSize="15sp"
-                    android:inputType="text"/>
-
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:id="@+id/relativeLayout2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView1"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="30dp">
-
-                <ImageView
-                    android:id="@+id/imgView_userIcon2"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@color/colorPrimary"
-                    android:padding="8dp"
-                    android:src="@drawable/phone"
-                    android:tint="@color/white" />
-
-
-
-                <EditText
-                    android:id="@+id/edUserMobile"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/imgView_userIcon2"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/imgView_userIcon2"
-                    android:background="@drawable/square_border"
-                    android:hint="@string/usermobileno"
-                    android:padding="7dp"
-                    android:paddingLeft="20dp"
-                    android:textSize="15sp"
-                    android:inputType="number"/>
-
-
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:id="@+id/relativeLayout3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/imageView1"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="30dp">
-
-                <ImageView
-                    android:id="@+id/imgView_userIcon3"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@color/colorPrimary"
-                    android:padding="8dp"
-                    android:src="@drawable/email"
-                    android:tint="@color/white" />
-
-
-                <EditText
-                    android:id="@+id/edUserEmail"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/imgView_userIcon3"
-                    android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/imgView_userIcon3"
-                    android:background="@drawable/square_border"
-                    android:hint="@string/useremail"
-                    android:padding="7dp"
-                    android:paddingLeft="20dp"
-                    android:textSize="15sp"
-                    android:inputType="text"/>
-
-
-            </RelativeLayout>
-
-            <Button
-                android:id="@+id/btnGenOtp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/colorPrimaryDark"
-                android:text="@string/getotp"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/terms"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:text="@string/termscondition"
-            android:textAlignment="center"
-            android:textColor="@color/linkblue"
-            android:textSize="15sp" />
-
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/termscondition"
+        android:textAlignment="center"
+        android:textColor="#FF78160B"
+        android:textSize="16sp" />
 
     </LinearLayout>
 
-    </ScrollView>
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnGenOtp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:text="@string/getotp"
+        android:textColor="@color/white"
+        android:background="#FF78160B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_margin="20dp"-->
+            <!--android:src="@drawable/carfront" />-->
+
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="25sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:text="@string/login_details"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="15sp" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/relativeLayout1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/imageView1"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginTop="30dp">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgView_userIcon"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:background="@color/colorPrimary"-->
+                    <!--android:padding="8dp"-->
+                    <!--android:src="@drawable/person"-->
+                    <!--android:tint="@color/white" />-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edUserName"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignBottom="@+id/imgView_userIcon"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_toRightOf="@+id/imgView_userIcon"-->
+                    <!--android:background="@drawable/square_border"-->
+                    <!--android:hint="@string/username"-->
+                    <!--android:padding="7dp"-->
+                    <!--android:paddingLeft="20dp"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:inputType="text"/>-->
+
+            <!--</RelativeLayout>-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/relativeLayout2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/imageView1"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginTop="30dp">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgView_userIcon2"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:background="@color/colorPrimary"-->
+                    <!--android:padding="8dp"-->
+                    <!--android:src="@drawable/phone"-->
+                    <!--android:tint="@color/white" />-->
+
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edUserMobile"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignBottom="@+id/imgView_userIcon2"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_toRightOf="@+id/imgView_userIcon2"-->
+                    <!--android:background="@drawable/square_border"-->
+                    <!--android:hint="@string/usermobileno"-->
+                    <!--android:padding="7dp"-->
+                    <!--android:paddingLeft="20dp"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:inputType="number"/>-->
+
+
+            <!--</RelativeLayout>-->
+
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/relativeLayout3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/imageView1"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginTop="30dp">-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgView_userIcon3"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:background="@color/colorPrimary"-->
+                    <!--android:padding="8dp"-->
+                    <!--android:src="@drawable/email"-->
+                    <!--android:tint="@color/white" />-->
+
+
+                <!--<EditText-->
+                    <!--android:id="@+id/edUserEmail"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignBottom="@+id/imgView_userIcon3"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_toRightOf="@+id/imgView_userIcon3"-->
+                    <!--android:background="@drawable/square_border"-->
+                    <!--android:hint="@string/useremail"-->
+                    <!--android:padding="7dp"-->
+                    <!--android:paddingLeft="20dp"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:inputType="text"/>-->
+
+
+            <!--</RelativeLayout>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnGenOtp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:background="@color/colorPrimaryDark"-->
+                <!--android:text="@string/getotp"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="22sp"-->
+                <!--android:textStyle="bold" />-->
+
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+    <!--</LinearLayout>-->
+
+    <!--</ScrollView>-->
+
+    <!--</LinearLayout>-->
 
 </RelativeLayout>

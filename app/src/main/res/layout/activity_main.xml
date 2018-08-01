@@ -1,68 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<android.support.v4.widget.DrawerLayout
-    android:id="@+id/drawer_layout"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:background="@drawable/splashimage">
+
+    <!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/map"-->
+        <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/container_toolbar"
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            app:cardCornerRadius="4dp"
+            app:cardElevation="10dp">
 
-            <include
-                android:id="@+id/toolbar"
-                layout="@layout/toolbar" />
-        </LinearLayout>
-
-        <FrameLayout
-            android:id="@+id/container_body"
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
 
+                <EditText
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@android:color/holo_green_dark"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:textSize="14sp"
+                    android:hint="Pick Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
-        </FrameLayout>
+                <EditText
+                    android:backgroundTint="@android:color/transparent"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@android:color/holo_red_dark"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:textSize="14sp"
+                    android:hint="Drop Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                        android:drawablePadding="4dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textSize="14sp"
+                        android:hint="Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                        android:drawablePadding="4dp"
+                        android:backgroundTint="@android:color/transparent"
+                        android:textSize="14sp"
+                        android:hint="Time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
 
 
+            </LinearLayout>
 
-        <customview.BottomNavigationViewEx
-            app:itemIconTint="@color/white"
-            app:itemTextColor="@color/white"
-            android:background="@color/colorPrimary"
-            android:layout_alignParentBottom="true"
-            android:id="@+id/navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:menu="@menu/navigation" />
+        </android.support.v7.widget.CardView>
 
 
     </LinearLayout>
 
-
-    <fragment
-        android:id="@+id/fragment_navigation_drawer"
-        android:layout_width="@dimen/nav_drawer_width"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        class = "com.onesidedcab.user.helper.FragmentDrawer"
-        app:layout="@layout/fragment_navigation_drawer"
-        tools:layout="@layout/fragment_navigation_drawer"
-        />
+</RelativeLayout>
 
 
+    <!--<android.support.v4.widget.DrawerLayout--><!--android:id="@+id/drawer_layout"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools">-->
 
 
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
 
-</android.support.v4.widget.DrawerLayout>
+    <!--<LinearLayout--><!--android:id="@+id/container_toolbar"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+    <!--<include--><!--android:id="@+id/toolbar"--><!--layout="@layout/toolbar" />--><!--</LinearLayout>-->
+
+    <!--<FrameLayout--><!--android:id="@+id/container_body"--><!--android:layout_width="fill_parent"--><!--android:layout_height="0dp"--><!--android:layout_weight="1" >-->
+
+
+    <!--</FrameLayout>-->
+
+
+    <!--<customview.BottomNavigationViewEx--><!--app:itemIconTint="@color/white"--><!--app:itemTextColor="@color/white"--><!--android:background="@color/colorPrimary"--><!--android:layout_alignParentBottom="true"--><!--android:id="@+id/navigation"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--app:menu="@menu/navigation" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<fragment--><!--android:id="@+id/fragment_navigation_drawer"--><!--android:layout_width="@dimen/nav_drawer_width"--><!--android:layout_height="match_parent"--><!--android:layout_gravity="start"--><!--class = "com.onesidedcab.user.helper.FragmentDrawer"--><!--app:layout="@layout/fragment_navigation_drawer"--><!--tools:layout="@layout/fragment_navigation_drawer"--><!--/>-->
+
+
+    <!--</android.support.v4.widget.DrawerLayout>-->

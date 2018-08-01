@@ -4,23 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/splashimage"
     android:orientation="vertical"
     tools:context=".ui.OtpActivity">
 
 
-
     <LinearLayout
-        android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="20dp"
-            android:src="@drawable/carfront" />
+        <!--<ImageView-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:src="@drawable/carfront" />-->
 
 
         <TextView
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:text="@string/otp"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -40,7 +40,7 @@
             android:layout_marginTop="10dp"
             android:text="@string/otp_details"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="15sp" />
 
         <LinearLayout
@@ -49,88 +49,87 @@
             android:orientation="vertical">
 
 
-
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
                 android:orientation="horizontal"
-                android:padding="20dp"
-                android:layout_gravity="center_horizontal"
-                >
-
+                android:padding="20dp">
 
 
                 <EditText
-                    android:textColor="@color/white"
+                    android:layout_weight="1"
                     android:id="@+id/edtTxtPin1"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="42dp"
                     android:layout_margin="5dp"
                     android:background="@drawable/round_shape"
                     android:gravity="center"
                     android:inputType="number"
                     android:maxLength="1"
                     android:maxLines="1"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
 
                 <EditText
-                    android:textColor="@color/white"
+                    android:layout_weight="1"
                     android:id="@+id/edtTxtPin2"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="42dp"
                     android:layout_margin="5dp"
                     android:background="@drawable/round_shape"
                     android:gravity="center"
                     android:inputType="number"
                     android:maxLength="1"
                     android:maxLines="1"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
 
                 <EditText
-                    android:textColor="@color/white"
+                    android:layout_weight="1"
                     android:id="@+id/edtTxtPin3"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="42dp"
                     android:layout_margin="5dp"
                     android:background="@drawable/round_shape"
                     android:gravity="center"
                     android:inputType="number"
                     android:maxLength="1"
                     android:maxLines="1"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
 
                 <EditText
-                    android:textColor="@color/white"
+                    android:layout_weight="1"
                     android:id="@+id/edtTxtPin4"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="42dp"
                     android:layout_margin="5dp"
                     android:background="@drawable/round_shape"
                     android:gravity="center"
                     android:inputType="number"
                     android:maxLength="1"
                     android:maxLines="1"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
 
                 <EditText
-                    android:textColor="@color/white"
+                    android:layout_weight="1"
                     android:id="@+id/edtTxtPin5"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="40dp"
+                    android:layout_height="42dp"
                     android:layout_margin="5dp"
                     android:background="@drawable/round_shape"
                     android:gravity="center"
                     android:inputType="number"
                     android:maxLength="1"
                     android:maxLines="1"
-                    android:padding="10dp" />
-
-
-
+                    android:padding="10dp"
+                    android:textColor="@color/white" />
 
 
             </LinearLayout>
-
 
 
             <TextView
@@ -140,34 +139,28 @@
                 android:layout_marginRight="30dp"
                 android:text="@string/resendcode"
                 android:textAlignment="center"
-                android:textColor="@color/linkblue"
+                android:textColor="#FF78160B"
                 android:textSize="20sp" />
 
 
 
-            <Button
-                android:id="@+id/btn_Continue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="30dp"
-                android:background="@color/colorPrimaryDark"
-                android:text="@string/continu"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="22sp"
-                android:textStyle="bold" />
 
 
         </LinearLayout>
 
 
-
     </LinearLayout>
 
 
-
+    <Button
+        android:id="@+id/btn_Continue"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:text="@string/continu"
+        android:textColor="@color/white"
+        android:background="#FF78160B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 
 </RelativeLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">One Sided Cab</string>
+    <string name="app_name">007 Cab</string>
 
 
     <string name="login_details">Please enter your mobile number and email to login or create account</string>
@@ -8,7 +8,7 @@
     <string name="useremail">Email (Optional)</string>
     <string name="getotp">Get OTP</string>
     <string name="save">Save</string>
-    <string name="terms">By continuing. I agree to Onesidedcabs</string>
+    <string name="terms">By continuing. I agree to 007 Cab</string>
     <string name="termscondition">Terms and Conditions</string>
     <string name="countrycode">+ 91</string>
     <string name="otp">Enter One Time Password (OTP)</string>
@@ -90,14 +90,6 @@
     <string name="getfare">Get Fare</string>
     <string name="refer">Refer</string>
     <string name="referstring">Gift your friends Rs. 100 when they Sign Up and you also get Rs 200 when they take their first ride with us. forany concern \n feedback@onesidedcab.com</string>
-
-
-
-
-
-
-
-
 
 
     <string name="internet_not_avail">Internet is not available. Please try later.</string>

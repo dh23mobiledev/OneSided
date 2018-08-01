@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.onesidedcab.user">
+    package="com.cab.user">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -33,10 +33,11 @@
         <activity
             android:name=".ui.OtpActivity"
             android:theme="@style/fullscreen" />
-        <activity android:name=".ui.MyRideActivity"/>
+        <activity android:name=".ui.MyRideActivity" />
         <activity android:name=".ui.RideDetailsActivity" />
         <activity android:name=".ui.PaymentOptionActivity" />
-        <activity android:name=".ui.RideDetailActivity"/>
+        <activity android:name=".ui.RideDetailActivity" />
+        <activity android:name=".ui.CarselectionActivity"></activity>
     </application>
 
 </manifest>
