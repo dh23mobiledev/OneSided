@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="007"
+            android:text="@string/app_name"
             android:textColor="@color/white"
             android:textSize="34sp"
             android:layout_marginTop="20dp"/>
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="All Copyrights reserved by 007"
+        android:text="All Copyrights reserved by 007 Cab"
         android:textColor="@color/white"
         android:textSize="12sp" />
 

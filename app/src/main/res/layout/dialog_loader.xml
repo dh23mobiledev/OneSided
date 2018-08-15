@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#13000000"
+    android:background="@color/semiTransparent"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -19,7 +19,7 @@
             android:layout_gravity="center"
             android:visibility="visible"
             app:indicatorColor="@android:color/white"
-            app:indicatorName="BallSpinFadeLoaderIndicator" />
+            app:indicatorName="BallClipRotateMultipleIndicator" />
 
 
 

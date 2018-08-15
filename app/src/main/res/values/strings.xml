@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">007 Cab</string>
+    <string name="myrides">My Rides</string>
 
 
     <string name="login_details">Please enter your mobile number and email to login or create account</string>
@@ -66,10 +67,10 @@
     <string name="discount">Discount Coupon</string>
     <string name="apply">Apply</string>
     <string name="note">Note</string>
-    <string name="notedetails">- Driver Allowance: Rs 0 \n - Extra KMs Fare: Rs 0 \n - One Sided Toll-Tax : Included \n - Inter-State Border Tax :Included \n - Parking Charges :As applicable Extra </string>
+    <string name="notedetails">- Driver Allowance: Rs 0 \n - Extra KMs Fare: Rs 0 \n - 007 cab Toll-Tax : Included \n - Inter-State Border Tax :Included \n - Parking Charges :As applicable Extra </string>
     <string name="choosepayment">Choose Payment Options</string>
     <string name="ongoingtrips">Ongoing Trips</string>
-    <string name="pasttrips">Past Trip</string>
+    <string name="pasttrips">Past Trips</string>
 
 
     <string name="card">Credit / Debit Card</string>
@@ -101,6 +102,16 @@
     <string name="failureSignIn">Connection Timeout Please Try again.</string>
     <string name="lbl_uname_not_null">Username must enter.</string>
     <string name="lbl_pwd_not_null">Mobile number must enter.</string>
+    <string name="txtEstTime">Estimated time</string>
+    <string name="txtEstDuration">Estimated duration</string>
+    <string name="next">Next</string>
+    <string name="ridelater">Ride later</string>
+    <string name="getride">Get Ride </string>
+
+    <string name="oneway">One way </string>
+    <string name="hourly">Hourly</string>
+
+
 
 
 </resources>

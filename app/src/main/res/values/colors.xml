@@ -30,9 +30,9 @@
     <!--<color name="transparent">#99000000</color>-->
 
 
-    <color name="colorPrimary">#b5d034</color>
-    <color name="colorPrimaryDark">#b5d034</color>
-    <color name="colorAccent">#b5d034</color>
+    <color name="colorPrimary">#FF78160B</color>
+    <color name="colorPrimaryDark">#FF78160B</color>
+    <color name="colorAccent">#FF78160B</color>
 
     <color name="linkblue">#3575d3</color>
 
@@ -62,6 +62,7 @@
     <color name="light9">#dbe0e3</color>
     <color name="light10">#edeff1</color>
     <color name="white">#ffffff</color>
+    <color name="red">#FF78160B</color>
 
 
 </resources>

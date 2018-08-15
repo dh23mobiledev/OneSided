@@ -16,6 +16,7 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import com.cab.user.BuildConfig
 import com.cab.user.R
+import com.google.android.gms.maps.model.LatLng
 import com.wang.avi.AVLoadingIndicatorView
 
 object Utils {
@@ -134,4 +135,33 @@ object Utils {
 //        val format = SimpleDateFormat("dd-MM-yyyy, hh:mm a")
 //        return format.format(date)
 //    }
+fun isEmptyString(text: String?): Boolean {
+    return text == null || text.trim { it <= ' ' } == "null" || text.trim { it <= ' ' }
+            .length <= 0
+}
+
+    fun getMapsApiDirectionsUrl(origin: LatLng, dest: LatLng): String {
+        // Origin of route
+        val str_origin = "origin=" + origin.latitude + "," + origin.longitude
+
+        // Destination of route
+        val str_dest = "destination=" + dest.latitude + "," + dest.longitude
+
+
+        // Sensor enabled
+        val sensor = "sensor=false"
+
+        // Building the parameters to the web service
+        val parameters = "$str_origin&$str_dest&$sensor"
+
+        // Output format
+        val output = "json"
+
+        // Building the url to the web service
+        val url = "https://maps.googleapis.com/maps/api/directions/$output?$parameters"
+
+
+        return url
+
+    }
 }

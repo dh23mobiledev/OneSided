@@ -46,7 +46,7 @@
                     android:layout_gravity="center"
                     android:gravity="end"
                     android:background="@drawable/price_rect"
-                    android:text="Rs. 100"
+                    android:text="₹ 1500"
                     android:paddingLeft="@dimen/semiMedium"
                     android:padding="@dimen/semiSmall"
                     android:textSize="@dimen/semiLarge"
